@@ -1,0 +1,169 @@
+//map/
+$palette:(
+	'pc01':#376579,
+	'pc02':#80aec3,
+	'pc03':#c0d9e6,
+	'pc04':#cce0e7,
+	'pc05':#27576a,
+	'pc06':#6B6666,
+	'pc07':#3e6f73,
+	'pc08':#387784,
+	'sc01':#83494a,
+	'sc02':#498382,
+	'sc03':#d3e6e4,
+	'sc04':#b2d4d0,
+	'bw01':#000000,
+	'bw02':#ffffff,
+	'nc01':#EEEEEE,
+	'nc02':#CCCCCC,
+	'nc03':#AAAAAA,
+	'nc04':#888888,
+	'nc05':#666666,
+	'nc06':#444444,
+	'tc01':#FDFBF8,
+	'tc02':#F4E0C3,
+	'tc03':#D7C3A7,
+	'tc04':#BAA78C,
+	'tc05':#9D8B72,
+	'tc06':#7F705A,
+	'tc07':#625643,
+	'tc08':#453C2E,);
+
+//sizes/
+$w-a:auto;
+$w-100:100%;
+$w-75:75%;
+$w-50:50%;
+$w-25:25%;
+
+//Buttons/
+.btnPrimary{
+	background-color: map-get($map:$palette,$key:'sc02');
+	color: map-get($map:$palette,$key:'bw02');
+	font-weight: 700;
+	padding: 12px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	&:hover{
+		background-color: map-get($map:$palette,$key:'sc01');
+		color: map-get($map:$palette,$key:'bw02');
+		cursor: pointer;
+	}
+}
+.btnPrimaryRounded{
+	@extend.btnPrimary;
+	border-radius: 8px;
+}
+
+.btnPrimary2{
+	background-color: map-get($map:$palette,$key:'bw02');
+	color: map-get($map:$palette,$key:'pc07');
+	font-weight: 700;
+	padding: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	&:hover{
+		background-color: map-get($map:$palette,$key:'tc05');
+		color: map-get($map:$palette,$key:'bw02');
+		cursor: pointer;
+	}
+}
+.btnPrimary2Rounded{
+	@extend.btnPrimary2;
+	border-radius: 8px;
+}
+
+.btnSecondary{
+	background-color: transparent;
+	border-color: map-get($map:$palette,$key:'bw02');
+	color: map-get($map:$palette,$key:'pc05');
+	padding: 12px;
+	margin: 16px;
+	font-weight: 700;
+	&:hover{
+		background-color: map-get($map:$palette,$key:'sc01');
+		border-color: map-get($map:$palette,$key:'sc07');
+		color: map-get($map:$palette,$key:'sc07');
+		cursor: pointer;
+	}
+}
+.btnSecondaryRounded{
+	@extend.btnSecondary;
+	border-radius: 8px;
+}
+
+
+//Text/
+@mixin text($font-size,$line-height,$color,$weight){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+	font-weight: $weight;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.textTitleXL{
+	@include text(3em,1.5em,map-get($map:$palette,$key:'pc05'),700)
+}
+.textTitleL{
+	@include text(2em,1.2em,map-get($map:$palette,$key:'pc05'),700)
+}
+.textTitleM{
+	@include text(1.2em,1em,map-get($map:$palette,$key:'pc05'),700)
+}
+.textTitleM2{
+	@include text(1.2em,1em,map-get($map:$palette,$key:'sc05'),700)
+}
+.textTitleXLDark{
+	@include text(3em,1.5em,map-get($map:$palette,$key:'bw02'),700)
+}
+.textTitleLDark{
+	@include text(2em,1.2em,map-get($map:$palette,$key:'bw02'),700)
+}
+.textTitleMDark{
+	@include text(1.2em,1em,map-get($map:$palette,$key:'bw02'),700)
+}
+.textParagraph{
+	@include text(1em,1.2em,map-get($map:$palette,$key:'bw02'),400)
+}
+.textParagraph02{
+	@include text(1em,1.2em,map-get($map:$palette,$key:'bw01'),400)
+}
+.textParagraphDark{
+	@include text(1em,1.2em,map-get($map:$palette,$key:'bw02'),400)
+}
+
+
+//Backgrounds/
+.BgLight{
+	background-color: map-get($map:$palette,$key:'pc03');
+}
+.BgLight2{
+	background-color: map-get($map:$palette,$key:'pc07');
+}
+
+.BgMedium{
+	background-color: map-get($map:$palette,$key:'pc05');
+}
+.BgDark{
+	background-color: map-get($map:$palette,$key:'pc03');
+}
+.BgDark2{
+	background-color: map-get($map:$palette,$key:'pc02');
+}
+
+//Border/
+.Border01{
+	border-color: map-get($map:$palette,$key:'pc07');
+}
+
+//Animations/
+.scale1{
+	transform: scale(1);
+	transition: transform 0.3s;
+	&:hover{
+		transform: scale(1.08);
+		transition: transform 0.3s;
+	}
+}

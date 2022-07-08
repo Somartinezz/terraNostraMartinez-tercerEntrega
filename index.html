@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Wow JS -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <title>Terra Nostra</title>
+    <meta name="description" content="Somos una empresa de origen familiar con más de 20 años de trayectoria ofreciendo productos inmobiliarios de excelente calidad.">
+    <meta name="keywords" content="casas, lotes, terrenos, ph, inmbuebles, mudanza, edificios">
+
+  </head>
+  <body>
+    
+    <!--header start -->
+    <div class="bg-white py-1 text-center text-secondary">
+      Contactanos 1156438840
+    </div>
+    <!--header end-->
+
+    <!-- NavBar start -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark BgDark2 p-3">
+      <div class="container-fluid">
+        <a href="error404.html" class="navbar-brand">
+          <img src="img/logos/logo.png" alt="logo de terra nostra" >
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item textTitleMDark">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown navbar-light">
+              <a class="nav-link dropdown-toggle textTitleMDark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Venta
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item textParagraph" href="pages/casas.html">Casas</a></li>
+                <li><a class="dropdown-item textParagraph" href="pages/departamentos.html">Departamentos</a></li>
+                <li><a class="dropdown-item textParagraph" href="pages/ph.html">Ph</a></li>
+                <li><a class="dropdown-item textParagraph" href="pages/lotes.html">Lotes</a></li>
+                <li><a class="dropdown-item textParagraph" href="pages/terrenos.html">Terrenos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item textTitleMDark">
+              <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item textTitleMDark">
+              <a class="nav-link" href="pages/mapa.html">Mapa</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar end -->
+
+    <!-- Carousel start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carousel/header-bariloche.jpg" class="d-block w-100" alt="Imagen de Bariloche, el lago Nahuel Huapi">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel/header-bs.jpg" class="d-block w-100" alt="Imagen de la ciudad de Buenos Aires">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel/header-cordoba.jpg" class="d-block w-100" alt="Imagen de la ciudad de Cordoba">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel/header-mendoza.jpg" class="d-block w-100" alt="Imagen de Mendoza">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel end -->
+
+    <!-- News start -->
+    <section class="p-5 ">
+      <h1 class="textTitleXL text-center pb-3">Propiedades destacadas</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Card1 -->
+        <div class="col wow flipInX">
+          <div class="card">
+            <img src="img/casas/casa1.jpg" class="card-img-top" alt="Casa de lujo ubicada en Escobar">
+            <div class="card-body">
+              <h5 class="textTitleM">Casa de lujo</h5>
+              <button class="btn btnPrimaryRounded w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">Ver detalle</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card2 -->
+        <div class="col wow flipInX">
+          <div class="card">
+            <img src="img/casas/casa2.jpg" class="card-img-top" alt="Casa de lujo ubicada en Escobar">
+            <div class="card-body">
+              <h5 class="textTitleM">Casa de lujo</h5>
+              <button class="btn btnPrimaryRounded w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">Ver detalle</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card3 -->
+        <div class="col wow flipInX">
+          <div class="card">
+            <img src="img/casas/casa3.jpg" class="card-img-top" alt="Casa de lujo ubicada en Escobar">
+            <div class="card-body">
+              <h5 class="textTitleM">Casa de lujo</h5>
+              <button class="btn btnPrimaryRounded w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">Ver detalle</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card4 -->
+        <div class="col wow flipInX">
+          <div class="card">
+            <img src="img/casas/casa4.jpg" class="card-img-top" alt="Casa de lujo ubicada en Escobar">
+            <div class="card-body">
+              <h5 class="textTitleM">Casa de lujo</h5>
+              <button class="btn btnPrimaryRounded w-100" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">Ver detalle</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- News end -->
+
+    <!-- Info start -->
+      <section class="col-sm-12 col-md-8 col-lg-12 container-fluid BgDark ">
+        <article  class="row ">
+          <h2 class="mt-2 text-center textTitleM">Contacto</h2>
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp">
+              <div id="nombreHelp" class="form-text">Indique su Nombre.</div>
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" aria-describedby="apellidoHelp">
+              <div id="nombreHelp" class="form-text">Indique su Apellido.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Indique su Email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono</label>
+              <input type="text" class="form-control" id="telefono" aria-describedby="telefonoHelp">
+              <div id="telefonoHelp" class="form-text">Indique su Teléfono.</div>
+            </div>
+            <div class="mb-3 form-check" >
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Acepto la politica de privacidad</label>
+            </div>
+            <button type="submit" class="btn btnPrimaryRounded text-white w-100 mb-2">Enviar</button>
+          </form>
+        </article>
+      </section>
+    </section>
+    
+    <!-- ends row-->
+    
+    <!-- Modal1 -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content align-middle">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/casas/casa1.jpg" class="card-img-top h-50" alt="Casa de lujo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal2 -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content align-middle">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/casas/casa2.jpg" class="card-img-top h-50" alt="Casa de lujo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal3 -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content align-middle">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/casas/casa3.jpg" class="card-img-top h-50" alt="Casa de lujo">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal4 -->
+      <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content align-middle">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="img/casas/casa4.jpg" class="card-img-top h-50" alt="Casa de lujo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Footer start -->
+    <footer class="container-fluid p-5 footer BgDark2">
+      <div class="row">
+        <div class="col-12 col-md">
+          <a href="index.html">
+          <img src="img/logos/logo.png" alt="logo de terra nostra">
+          </a>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="textTitleMDark">Nuestro sitio web</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="textParagraphDark link-warning" href="index.html">Inicio</a></li>
+            <li><a class="textParagraphDark link-warning" href="pages/nosotros.html">Nosotros</a></li>
+            <li><a class="textParagraphDark link-warning" href="pages/mapa.html">Mapa</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="textTitleMDark">Venta</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="textParagraphDark link-warning" href="pages/casas.html">Casas</a></li>
+            <li><a class="textParagraphDark link-warning" href="pages/departamentos.html">Departamentos</a></li>
+            <li><a class="textParagraphDark link-warning" href="pages/ph.html">Ph</a></li>
+            <li><a class="textParagraphDark link-warning" href="pages/lotes.html">Lotes</a></li>
+            <li><a class="textParagraphDark link-warning" href="pages/terrenos.html">Terrenos</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="textTitleMDark">Siguenos en redes</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <img src="img/redes/facebook.png" alt="icono de Facebook" class="me-2 my-2">
+              <a class="textParagraphDark link-warning" href="https://www.facebook.com" target="blank">Facebook</a>
+            </li>
+            <li>
+              <img src="img/redes/instagram.png" alt="icono de Instagram" class="me-2 my-2">
+              <a class="textParagraphDark link-warning" href="https://www.instagram.com" target="blank">Instagram</a>
+            </li>
+            <li>
+              <img src="img/redes/twitter.png" alt="icono de Facebook" class="me-2 my-2">
+              <a class="textParagraphDark link-warning" href="https://www.twitter.com" target="blank">Twitter</a>
+            </li>
+            <li>
+              <img src="img/redes/whatsapp.png" alt="icono de Instagram" class="me-2 my-2">
+              <a class="textParagraphDark link-warning" href="https://www.whatsapp.com" target="blank">Whatsapp</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5 class="textTitleMDark">Datos de contacto</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="textParagraphDark link-warning" href="#">terranostra@gmail.com</a></li>
+            <p class="textParagraphDark">Av. Villanueva, Ingeniero Maschwitz, Provincia de Buenos Aires
+            <br>
+            Buenos Aires, Argentina</p>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
